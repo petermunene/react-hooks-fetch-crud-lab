@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 
-function QuestionItem({ question,onDelete }) {
+function QuestionItem({ question,onDelete , handleOnChange }) {
   const { id, prompt, answers, correctIndex } = question;
   const [newCorrectIndex , setCorrectIndex]=useState(correctIndex)
 
